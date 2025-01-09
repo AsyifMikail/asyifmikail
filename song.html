@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Favourite Song</title>
+  <link rel="stylesheet" href="">
+  <script src="https://kit.fontawesome.com/ca6acbd5c4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+  <style type="text/css">
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #5D5491;
+    font-family: "Trirong", serif;
+}
+h1{
+    background-clip: text;
+    color:black;
+}
+.lagu {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    background-color: #E1FB62;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.album {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 8px #5D5491 ;
+}
+.play-button {
+    display: inline-block;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #5D5491;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.play-button:hover {
+    background-color: lavender;
+    transform: scale(1.05); 
+}
+.play-button:active {
+    background-color: white;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #312c51;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+a:hover {
+    color:#5D5491;
+    background-color: white;
+    transform: scale(1.05);
+}
+    
+</style>
+
+<head>
+<body>
+    <div class="lagu">
+        <h1>OSCAR WINNING TEARS</h1>
+        <P> the second track on RAYE's long awaited debut album, My 21st Century Blues.</P>
+        <img src="image/raye.png" alt="Song Cover" class="album">
+        <audio id="audio-player" src="Audio/Raye.mp3"></audio>
+        <button class="play-button" onclick="playSong()">Play</button>
+    </div>
+    <a href="More.html"><i class="fa-solid fa-angle-left"></i></a>
+    <script>
+        function playSong() {
+            const audio = document.getElementById('audio-player');
+            audio.play();
+        }
+    </script>
+</body>
+</html>

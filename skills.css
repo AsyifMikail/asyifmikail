@@ -1,0 +1,185 @@
+*{
+  box-sizing: border-box;
+}
+
+body
+{
+  font-family: "Trirong", serif;
+  padding: 20px;
+  background-image: url('image/abs.jpg');
+  width: 1500px;
+  
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  colour: #E1FB62 ;
+  background: #5D5491;
+  justify 
+  border-radius: 20px;
+}
+.header03 {
+  padding: 50px;
+  text-align: center;
+  colour: #E1FB62 ;
+  background: #5D5491;
+  border-radius: 20px;
+}
+
+.header03 h1 {
+  font-size: 50px;
+  font-colour: #E1FB62;
+  border-radius: 20px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:#E1FB62 ;
+  border-radius: 20px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  font-size:20px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.topnav a:hover {
+  background-color:#5D5491 ;
+  color: white;
+}
+
+.section01{
+  padding: 50px 20px;
+  text-align: center;
+  text-justify: inter-word;
+  text-size:20px;
+  background-color: white; 
+  border: 0px solid white;    
+  border-radius: 20px;       
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.wrapper{
+  display: flex;
+  width: 120%;
+  justify-content: space-around;
+}
+
+
+.card{
+  width: 290px;
+  height: 360px;
+  padding: 2rem 1rem;
+  background: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 820px;
+  margin-left:-1090px;
+  justify-content: space-around;
+  box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+  transition: 0.5s ease-in-out ;
+}
+
+.card:hover{
+  transform: translateY(2px);
+}
+
+.card:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150,201,61,1));
+  z-index: 5;
+  transition: 0.5s ;
+  opacity: 0;
+}
+
+.card:hover:before{
+  opacity:1;
+}
+
+.card img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  position: relative;
+  top:0;
+  left: 0;
+}
+.card .info{
+  position: absolute;
+  z-index: 5;
+  left:15;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s ;
+} 
+
+.card:hover .info{
+  opacity: 1;
+  transform: translateY(30px);
+}
+
+.card .info h1{
+  margin: 10;
+}
+
+.card .info p{
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.card .info .btn{
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+
+.card .info{
+  position: relative;
+  z-index: 5;
+  color: #fff;
+  opacity: 0;
+  transform: tranlateY(30px;
+  transition: 0.5s all;
+} 
+
+.card:hover .info{
+  opacity: 1;
+  transform: translateY(10px);
+}
+
+.card .info h1{
+  margin: 0;
+}
+
+.card .info p{
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  left: 20px;
+}
+
+.card .info .btn{
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
